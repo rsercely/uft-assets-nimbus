@@ -1,16 +1,17 @@
-# Script-Directory
-This is planned to be a landing page to help expose several demo assets that the field has found useful as part of a core demo or taylored demo.
+# Contents-and-Usage-of-Contained-Scripts
+This is a landing page of demo assets that the field has found useful as part of a core demo or tailored demo.
 
-**Most** of these scripts are not considered as part of the "core" demo assets which means you will **not** find them delivered as part of the [devops.dockerapp](https://hub.docker.com/r/admpresales/devops.dockerapp/) or the [devops](https://hub.docker.com/r/admpresales/devops/) images.  Scripts that are shown on this page that are part of the core scripts delivered in the Devops image are noted with '(c)'.  For example:
+**Most** of these scripts are not considered part of the "core" demo assets which means you will **not** find them delivered as part of the [devops.dockerapp](https://hub.docker.com/r/admpresales/devops.dockerapp/) or the [devops](https://hub.docker.com/r/admpresales/devops/) images.  Scripts that are shown on this page that are part of the core scripts delivered in the Devops image are noted with '(c)'.  For example:
 ```
 leanft-gherkin (c)
 ```
 
-Instructions on [How to add test to devops container](#how-to-add-test-to-devops-container) can be found below.  Please make sure all projects have a useful README.md on how one should use the script.  Help on how to create the README.md using the github markdown language can be found:
-* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* [Basic Writing and Formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-* [Markdown Cheatsheet PDF](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+Instructions on [How to add tests to devops container](#how-to-add-test-to-devops-container) can be found below. Alternatively, you could just clone or fork the test into the filesystem of nimbusClient or nimbusServer.  
+
+Instruction and expectations for those develping new scripts can be found below: <br>
+[Expectations for those developing new scripts](#Expectations-for-those-developing-new-scripts)
+
+<b>Note that the following sections are "old" and do not completely reflect what I am proposing in this doc.</b>
 
 ## LeanFT Scripts
 | Script Name      | Note                               |
@@ -32,7 +33,7 @@ Instructions on [How to add test to devops container](#how-to-add-test-to-devops
 |[flight-api-with-gui-verification](https://github.com/admpresales/flight_api_with_gui_verification)|Demonstrates using API test interacting (calling) GUI test.  This script is great for showing customer the value of using API testing with their regression suites. Much of regression testing is setting up specific data secnarios to users can perform the actual test they need. Using API for the setup can drastically reduce the oveall execution time.|
 |[comprehensive-uft-test-flightgui](https://github.com/admpresales/comprehensive-uft-test-flightgui)|UFT script demonstrating several capabilites of UFT (courtesy Ron Sercely) |
 
-## VUGen scripts
+## VuGen scripts
 | Script Name      | Note                               |
 | ---------------- | ---------------------------------- |
 |[TruClient Native Mobile](https://github.com/admpresales/AOS_TruClient_buy_headphones_with_transactions)|This is a simple TruClient mobile script for iOS. Works against the AOS app|
@@ -52,22 +53,85 @@ Instructions on [How to add test to devops container](#how-to-add-test-to-devops
 
 [Git Tip: Tags](http://alblue.bandlem.com/2011/04/git-tip-of-week-tags.html)
 
-## Postman Client
-[Postman Echo](https://docs.postman-echo.com/)
-
-[Postman Cheatsheet](https://media.readthedocs.org/pdf/postman-quick-reference-guide/latest/postman-quick-reference-guide.pdf)
-
 ## How to add test to devops container
-&#x1F340; `If you can connect to www.github.com from your devops container, then from a terminal window on NimbusServer with the devops container up, run the following command:`
+If you can connect to www.github.com from your devops container, then from a terminal window on NimbusServer with the devops container up, run the following command:
 
 ```
 docker exec devops bash -c "su -s /bin/bash -c 'git clone --mirror https://github.com/admpresales/aos-web-lft4se.git /gitrepo/aos-web-lft4se' apache"
 ```
 
-`If your container can not connect to the internet, then use these from your terminal window`
+If your container can not connect to the internet, then use these from your command window:
+
 ```
 git clone --mirror https://github.com/admpresales/aos-web-lft4se.git aos-web-lft4se
+```
+```
 docker cp aos-web-lft4se devops:/gitrepo
+```
+```
 docker exec devops bash -c 'chown -R apache:apache /gitrepo/aos-web-lft4se'
 ```
+
 **You would of course replace the url and name to the git project you wish to use in the above steps**
+
+## Expectations for those developing new scripts
+<h4>README.md</h4>
+All projects must have a useful README.md. Help on how to create the README.md using the github markdown language can be found:
+* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* [Basic Writing and Formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+* [Markdown Cheatsheet PDF](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+```
+
+<h5>Required sections/outline</h5>
+| Field Name      | Required(Y/N|Other Comments
+| ----------------| ---------------------------------- |
+Script Name      | Y| Should be same as name of repository, except can use Camel-Case
+Description : Y | Should be same as github repository description string
+Table of Contents| N | This is a TOC for the README, in case the README is long
+Usage| Y | How to use including prerequisites and dependencies
+Send Feedback | Y |  Email(s)
+
+
+<h4>Best practices</h4>
+<h5>General</h5>
+Scripts should be named: <technology-type-target-short_description>
+
+Examples:
+
+	    uft-gui-aos-create_new_account
+	    vugen-truclient-aos-sanity
+
+If the technology supports it, there should be at least one checkpoint.
+
+If the technology supports it, there should a parameterized value(s).
+
+<h5>LeanFT</h5>
+Test should be verified within both NimbusClient and NimbusServer.
+
+Only maven projects should be used.
+
+LeanFT version should be set to use the lastest version of LeanFT by modifying the default pom.xml file. Specifically, in properties create a leanft.version tag, with a value of RELEASE.
+
+
+    <properties>
+        <leanft.version>RELEASE</leanft.version>
+    </properties>
+
+Then in each LeanFt <dependency>, replace the hard coded version with ${leanft.version}, as shown here:
+
+    <dependency>
+            <groupId>com.hp.lft</groupId>
+            <artifactId>sdk</artifactId>
+            <version>${leanft.version}</version>
+    </dependency>
+
+<h5>UFT</h5>
+Web scripts should always be recorded with Internet Explorer so that the active screen is present.
+
+Test replay should be tested against the 3 browsers installed on NimbusClient, i.e, IE, Chrome, Firefox.
+
+
+<h5>VuGen</h5>
+
+RonK or Michal?
