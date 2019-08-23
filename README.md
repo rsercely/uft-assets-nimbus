@@ -31,12 +31,12 @@ Script Name
 |[testng-example](https://github.com/admpresales/testng-example)|Simple TestNG tests using LeanFT Reports to demonstrate how to run TestNG in parallel and pass arguments to a test|
 
 ## UFT Scripts
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Script Name 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Note |
-| ---------------- | ---------------------------------- |
-|[flight-api-with-gui-verification            ](https://github.com/admpresales/flight_api_with_gui_verification)|Demonstrates using API test interacting (calling) GUI test.  This script is great for showing customer the value of using API testing with their regression suites. Much of regression testing is setting up specific data secnarios to users can perform the actual test they need. Using API for the setup can drastically reduce the oveall execution time.|
-|[comprehensive-uft-test-flightgui](https://github.com/admpresales/comprehensive-uft-test-flightgui)|UFT script demonstrating several capabilites of UFT (courtesy Ron Sercely) |
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Script Name 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Note
+ ---------------- | ----------------------------------
+[flight-api-with-gui-verification            ](https://github.com/admpresales/flight_api_with_gui_verification)|Demonstrates using API test interacting (calling) GUI test.  This script is great for showing customer the value of using API testing with their regression suites. Much of regression testing is setting up specific data scenarios to users can perform the actual test they need. Using API for the setup can drastically reduce the overall execution time.
+[comprehensive-uft-test-flightgui](https://github.com/admpresales/comprehensive-uft-test-flightgui)|UFT script demonstrating several capabilites of UFT (courtesy Ron Sercely)
 
 ## VuGen scripts
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -87,9 +87,9 @@ docker exec devops bash -c 'chown -R apache:apache /gitrepo/aos-web-lft4se'
 ####README.md
 All projects must have a useful README.md. Help on how to create the README.md using the github markdown language can be found:<br>
 * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* [Markdown Cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [Basic Writing and Formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-* [Markdown Cheatsheet PDF](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Markdown Cheat sheet PDF](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 ```
 
 If you are going to be a lot with Markdown, or something "fancy", you might want to install Markdownad, which allows you to develop Markdown where you see the "code" and results side by side:<br>
@@ -121,12 +121,12 @@ If the technology supports it, there should be at least one checkpoint.
 
 If the technology supports it, there should a parameterized value(s).
 
-#####LeanFT
+#####LeanFt
 Test should be verified within both NimbusClient and NimbusServer.
 
 Only maven projects should be used.
 
-LeanFT version should be set to use the lastest version of LeanFT by modifying the default pom.xml file. Specifically, in properties create a leanft.version tag, with a value of RELEASE.
+LeanFT version should be set to use the latest version of LeanFT by modifying the default pom.xml file. Specifically, in properties create a leanft.version tag, with a value of RELEASE.
 
 
     <properties>
