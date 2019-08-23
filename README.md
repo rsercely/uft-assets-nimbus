@@ -6,12 +6,13 @@ This is a landing page of demo assets that the field has found useful as part of
 leanft-gherkin (c)
 ```
 
-Instructions on [How to add tests to devops container](#how-to-add-test-to-devops-container) can be found below. Alternatively, you could just clone or fork the test into the filesystem of nimbusClient or nimbusServer.  
+Instructions on [How to add tests to devops container](#how-to-add-test-to-devops-container) can be found below. Alternatively, you could just clone or fork the test into the file system of NimbusClient or NimbusServer.  
 
-Instruction and expectations for those develping new scripts can be found below: <br>
+Instruction and expectations for those developing new scripts can be found below:<br>
 [Expectations for those developing new scripts](#Expectations-for-those-developing-new-scripts)
 
-<b>Note that the following sections are "old" and do not completely reflect what I am proposing in this doc.</b>
+<b>Note that the following sections are "old" and do not completely reflect what I am proposing in this doc. Most of what I have added, and want feedback on, is in the "Expectations for those developing new scripts" section.
+</b>
 
 ## LeanFT Scripts
 | Script Name      | Note                               |
@@ -30,19 +31,19 @@ Instruction and expectations for those develping new scripts can be found below:
 ## UFT Scripts
 | Script Name      | Note                               |
 | ---------------- | ---------------------------------- |
-|[flight-api-with-gui-verification](https://github.com/admpresales/flight_api_with_gui_verification)|Demonstrates using API test interacting (calling) GUI test.  This script is great for showing customer the value of using API testing with their regression suites. Much of regression testing is setting up specific data secnarios to users can perform the actual test they need. Using API for the setup can drastically reduce the oveall execution time.|
+|[flight-api-with-gui-verification &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ](https://github.com/admpresales/flight_api_with_gui_verification)|Demonstrates using API test interacting (calling) GUI test.  This script is great for showing customer the value of using API testing with their regression suites. Much of regression testing is setting up specific data secnarios to users can perform the actual test they need. Using API for the setup can drastically reduce the oveall execution time.|
 |[comprehensive-uft-test-flightgui](https://github.com/admpresales/comprehensive-uft-test-flightgui)|UFT script demonstrating several capabilites of UFT (courtesy Ron Sercely) |
 
 ## VuGen scripts
 | Script Name      | Note                               |
 | ---------------- | ---------------------------------- |
-|[TruClient Native Mobile](https://github.com/admpresales/AOS_TruClient_buy_headphones_with_transactions)|This is a simple TruClient mobile script for iOS. Works against the AOS app|
+|[TruClient Native Mobile&nbsp; &nbsp; &nbsp; &nbsp; ](https://github.com/admpresales/AOS_TruClient_buy_headphones_with_transactions)|This is a simple TruClient mobile script for iOS. Works against the AOS app|
 
 ## Utility scripts
 | Script Name      | Note                               |
 | ---------------- | ---------------------------------- |
 |[jenkins-jobs](https://github.houston.softwaregrp.net/AMSPreSales-Demos/jenkins-jobs)|This is a set of scripts to extract or deploy Jenkins views and jobs.  It also contains the jobs and views from the released version of the devops docker image|
-|[Docker Server Scripts](https://github.com/panama69/DockerScripts.git)|Scripts used to start various containers for the demos|
+|[Docker Server Scripts&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ](https://github.com/panama69/DockerScripts.git)|Scripts used to start various containers for the demos|
 
 ## Branching and Merging strategies
 [A Successful Git Branching Model](http://nvie.com/posts/a-successful-git-branching-model/)
@@ -75,15 +76,21 @@ docker exec devops bash -c 'chown -R apache:apache /gitrepo/aos-web-lft4se'
 **You would of course replace the url and name to the git project you wish to use in the above steps**
 
 ## Expectations for those developing new scripts
-<h4>README.md</h4>
-All projects must have a useful README.md. Help on how to create the README.md using the github markdown language can be found:
+####README.md
+All projects must have a useful README.md. Help on how to create the README.md using the github markdown language can be found:<br>
 * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [Basic Writing and Formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 * [Markdown Cheatsheet PDF](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 ```
 
-<h5>Required sections/outline</h5>
+If you are going to be a lot with Markdown, or something "fancy", you might want to install Markdownad, which allows you to develop Markdown where you see the "code" and results side by side:<br>
+[Markdown editor for your desktop](http://markdownpad.com/news/2013/introducing-markdownpad-2)
+
+To make it work on Windows 10 however, you will also need to install awesomium sdk:<br>
+[awesomium sdk](http://markdownpad.com/download/awesomium_v1.6.6_sdk_win.exe)
+
+#####Required sections/outline
 | Field Name      | Required(Y/N|Other Comments
 | ----------------| ---------------------------------- |
 Script Name      | Y| Should be same as name of repository, except can use Camel-Case
@@ -93,8 +100,8 @@ Usage| Y | How to use including prerequisites and dependencies
 Send Feedback | Y |  Email(s)
 
 
-<h4>Best practices</h4>
-<h5>General</h5>
+####Best practices
+#####General
 Scripts should be named: <technology-type-target-short_description>
 
 Examples:
@@ -106,7 +113,7 @@ If the technology supports it, there should be at least one checkpoint.
 
 If the technology supports it, there should a parameterized value(s).
 
-<h5>LeanFT</h5>
+#####LeanFT
 Test should be verified within both NimbusClient and NimbusServer.
 
 Only maven projects should be used.
@@ -126,12 +133,12 @@ Then in each LeanFt <dependency>, replace the hard coded version with ${leanft.v
             <version>${leanft.version}</version>
     </dependency>
 
-<h5>UFT</h5>
+#####UFT
 Web scripts should always be recorded with Internet Explorer so that the active screen is present.
 
 Test replay should be tested against the 3 browsers installed on NimbusClient, i.e, IE, Chrome, Firefox.
 
 
-<h5>VuGen</h5>
+#####VuGen
 
 RonK or Michal?
