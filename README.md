@@ -1,37 +1,37 @@
 # Contents-and-Usage-of-Contained-Scripts
-This is a landing page of demo assets that the field has found useful as part of a core demo or tailored demo.
+This document listsdemo assets that the field has found useful as part of a core demo or tailored demo.
 
-**Most** of these scripts are not considered part of the "core" demo assets which means you will **not** find them delivered as part of the [devops.dockerapp](https://hub.docker.com/r/admpresales/devops.dockerapp/) or the [devops](https://hub.docker.com/r/admpresales/devops/) images.  Scripts that are shown on this page that are part of the core scripts delivered in the Devops image are noted with '(c)'.  For example:
+**Most** of these test scripts are not considered part of the "core" demo assets which means you will **not** find them delivered as part of the [devops.dockerapp](https://hub.docker.com/r/admpresales/devops.dockerapp/) or the [devops](https://hub.docker.com/r/admpresales/devops/) images.  Test scripts that are shown on this page that **are** part of the core scripts delivered in the Devops image are noted with '(c)'.  For example:
 ```
 leanft-gherkin (c)
 ```
 
-Instructions on [How to add tests to devops container](#how-to-add-test-to-devops-container) can be found below. Alternatively, you could just clone or fork the test into the file system of NimbusClient or NimbusServer.  
+Instructions on [How to add test scripts to the devops container](#how-to-add-test-to-devops-container) can be found below. Alternatively, you could just clone or fork the repository into the file system of NimbusClient or NimbusServer.  
 
-Instruction and expectations for those developing new scripts can be found below:<br>
+Instruction and expectations for those developing new test scripts can be found below:<br>
 [Expectations for those developing new scripts](#Expectations-for-those-developing-new-scripts)
 
-<b>Note that the following sections are "old" and do not completely reflect what I am proposing in this doc. Most of what I have added, and want feedback on, is in the "Expectations for those developing new scripts" section.
+<b>Note test scripts details in the following sections are "old" and do not completely reflect what I am proposing in this doc. Most of what I have added, and want feedback on, is in the "Expectations for those developing new scripts" section.
 </b>
 
 ## LeanFT Scripts
 | Script Name  | Note|
 | ---------------- | ---------------------------------- |
-|[leanft-gherkin](https://github.com/admpresales/leanft-gherkin) (c)| IntelliJ - maven project which uses LeanFT and gherkins feature |file and cucumber for execution.  This one actually executes a test against AOS |
-|octane-gherkin](https://github.com/admpresales/octane-gherkin) (c)|Very similar to LeanFT_Gherkins with the exception that the Gherkin step definitions are left empty so it runs faster.  The intent here is used when focusing on Octane demos only and LFT is not a focus. |
-|[aos-web-lft4se](https://github.com/admpresales/aos-web-lft4se) | Maven project demonstrating using LeanFT for Selenium in a simple project.  This was created using the Selenium OIC. |
-|[simple-lft-selenium](https://github.com/admpresales/simple-lft-selenium)|Simple script demonstrating Selenium and LFT used together.  With webdriver launching and LFT attaching to browser and using the Verify and Reporter classes |
+|[leanft-gherkin](https://github.com/admpresales/leanft-gherkin) (c)| IntelliJ - maven project which uses LeanFT and gherkins features and files and cucumber for execution.  This one actually executes a test against AOS |
+|octane-gherkin](https://github.com/admpresales/octane-gherkin) (c)|Very similar to LeanFT_Gherkins with the exception that the Gherkin step definitions are left empty so it runs faster.  The intent here is to use when focusing on Octane demos only and LeanFt is not a focus. |
+|[aos-web-lft4se](https://github.com/admpresales/aos-web-lft4se) | Maven project demonstrating using LeanFt for Selenium in a simple project.  This was created using the Selenium OIC. |
+|[simple-lft-selenium](https://github.com/admpresales/simple-lft-selenium)|Simple script demonstrating Selenium and LeanFt used together.  With webdriver launching and LeanFt attaching to browser and using the Verify and Reporter classes |
 |[oscillating](https://github.com/admpresales/oscillating)|This script was used as part of a training session to demonstrate how areas of the Octane Pipeline Analysis screen gets populated based on how scripts run, pass, fail, etc. |
-|[Mobile_AOS_Test - Android](https://github.com/panama69/Mobile_AOS_Test)|Simple LFT test against AOS on an Android device
-|[Mobile AOS Test - iOS](https://github.com/admpresales/aos-ios-leanft)|LeanFT tests against AOS on an iOS device |
-|[LeanFT_AppliTools](https://github.com/panama69/LeanFT_AppliTools)|Very simple LeanFT/AppliTools test using C#.  The code came from AppliTools website but I add information to readme to aid in setting things up |
+|[Mobile_AOS_Test - Android](https://github.com/panama69/Mobile_AOS_Test)|Simple LeanFt test against AOS on an Android device
+|[Mobile AOS Test - iOS](https://github.com/admpresales/aos-ios-leanft)|LeanFt tests against AOS on an iOS device |
+|[LeanFT_AppliTools](https://github.com/panama69/LeanFT_AppliTools)|Very simple LeanFT/AppliTools test using C#.  The code came from AppliTools website but I added information to the readme to aid in setting things up |
 |[LeanFT_Cross_Browser_Mobile](https://github.com/panama69/LeanFT_Cross_Browser_Mobile)|Simple script showing execution across the desktop Firefox browser and the iPhone Safari browser. |
-|[testng-example](https://github.com/admpresales/testng-example)|Simple TestNG tests using LeanFT Reports to demonstrate how to run TestNG in parallel and pass arguments to a test |
+|[testng-example](https://github.com/admpresales/testng-example)|Simple TestNG tests using LeanFt Reports to demonstrate how to run TestNG in parallel and pass arguments to a test |
 
 ## UFT Scripts
 | Script Name  | Note|
  ---------------- | ----------------------------------
-[flight-api-with-gui-verification            ](https://github.com/admpresales/flight_api_with_gui_verification) | Demonstrates using API test interacting (calling) GUI test.  This script is great for showing customer the value of using API testing with their regression suites. Much of regression testing is setting up specific data scenarios to users can perform the actual test they need. Using API for the setup can drastically reduce the overall execution time.
+[flight-api-with-gui-verification](https://github.com/admpresales/flight_api_with_gui_verification) | Demonstrates using API test interacting (calling) GUI test.  This script is great for showing customer the value of using API testing with their regression suites. Much of regression testing is setting up specific data scenarios so users can perform the actual test they need. Using API for the setup can drastically reduce the overall execution time.
 [comprehensive-uft-test-flightgui](https://github.com/admpresales/comprehensive-uft-test-flightgui) | UFT script demonstrating several capabilites of UFT (courtesy Ron Sercely)
 
 ## VuGen scripts
@@ -55,7 +55,7 @@ Instruction and expectations for those developing new scripts can be found below
 [Git Tip: Tags](http://alblue.bandlem.com/2011/04/git-tip-of-week-tags.html)
 
 ## How to add test to devops container
-If you can connect to www.github.com from your devops container, then from a terminal window on NimbusServer with the devops container up, run the following command:
+If you can connect to https://www.github.com from your devops container, then from a terminal window on NimbusServer with the devops container up, run the following command:
 
 ```
 docker exec devops bash -c "su -s /bin/bash -c 'git clone --mirror https://github.com/admpresales/aos-web-lft4se.git /gitrepo/aos-web-lft4se' apache"
@@ -84,7 +84,7 @@ All projects must have a useful README.md. Help on how to create the README.md u
 * [Markdown Cheat sheet PDF](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 ```
 
-If you are going to be a lot with Markdown, or something "fancy", you might want to install Markdownad, which allows you to develop Markdown where you see the "code" and results side by side:<br>
+If you are going to writing a lot with Markdown, or something "fancy", you might want to install MarkdownPad, which allows you to develop Markdown on your desktop where you see the "code" and results side by side:<br>
 [Markdown editor for your desktop](http://markdownpad.com/news/2013/introducing-markdownpad-2)
 
 To make it work on Windows 10 however, you will also need to install awesomium sdk:<br>
@@ -112,6 +112,8 @@ Examples:
 If the technology supports it, there should be at least one checkpoint.
 
 If the technology supports it, there should a parameterized value(s).
+
+All web tests should be run against all installed browsers.
 
 #####LeanFt
 Test should be verified within both NimbusClient and NimbusServer.
