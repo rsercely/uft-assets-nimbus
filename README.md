@@ -15,7 +15,7 @@ Instruction and expectations for those developing new scripts can be found below
 </b>
 
 ## LeanFT Scripts
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Script Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Note|
+| Script Name  | Note|
 | ---------------- | ---------------------------------- |
 |[leanft-gherkin](https://github.com/admpresales/leanft-gherkin) (c)| IntelliJ - maven project which uses LeanFT and gherkins feature |file and cucumber for execution.  This one actually executes a test against AOS |
 |octane-gherkin](https://github.com/admpresales/octane-gherkin) (c)|Very similar to LeanFT_Gherkins with the exception that the Gherkin step definitions are left empty so it runs faster.  The intent here is used when focusing on Octane demos only and LFT is not a focus. |
@@ -29,18 +29,18 @@ Instruction and expectations for those developing new scripts can be found below
 |[testng-example](https://github.com/admpresales/testng-example)|Simple TestNG tests using LeanFT Reports to demonstrate how to run TestNG in parallel and pass arguments to a test |
 
 ## UFT Scripts
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Script Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Note|
+| Script Name  | Note|
  ---------------- | ----------------------------------
 [flight-api-with-gui-verification            ](https://github.com/admpresales/flight_api_with_gui_verification) | Demonstrates using API test interacting (calling) GUI test.  This script is great for showing customer the value of using API testing with their regression suites. Much of regression testing is setting up specific data scenarios to users can perform the actual test they need. Using API for the setup can drastically reduce the overall execution time.
 [comprehensive-uft-test-flightgui](https://github.com/admpresales/comprehensive-uft-test-flightgui) | UFT script demonstrating several capabilites of UFT (courtesy Ron Sercely)
 
 ## VuGen scripts
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Script Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Note|
+| Script Name  | Note|
 | ---------------- | ---------------------------------- |
 |[TruClient Native Mobile    ](https://github.com/admpresales/AOS_TruClient_buy_headphones_with_transactions) | This is a simple TruClient mobile script for iOS. Works against the AOS app|
 
 ## Utility scripts
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Script Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Note|
+| Script Name  | Note|
 | ---------------- | ---------------------------------- |
 |[jenkins-jobs](https://github.houston.softwaregrp.net/AMSPreSales-Demos/jenkins-jobs)|This is a set of scripts to extract or deploy Jenkins views and jobs.  It also contains the jobs and views from the released version of the devops docker image|
 |[Docker Server Scripts ](https://github.com/panama69/DockerScripts.git)|Scripts used to start various containers for the demos|
