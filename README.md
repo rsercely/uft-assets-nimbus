@@ -31,19 +31,19 @@ Instruction and expectations for those developing new scripts can be found below
 ## UFT Scripts
 | Script Name      | Note                               |
 | ---------------- | ---------------------------------- |
-|[flight-api-with-gui-verification &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ](https://github.com/admpresales/flight_api_with_gui_verification)|Demonstrates using API test interacting (calling) GUI test.  This script is great for showing customer the value of using API testing with their regression suites. Much of regression testing is setting up specific data secnarios to users can perform the actual test they need. Using API for the setup can drastically reduce the oveall execution time.|
+|[flight-api-with-gui-verification &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ](https://github.com/admpresales/flight_api_with_gui_verification)|Demonstrates using API test interacting (calling) GUI test.  This script is great for showing customer the value of using API testing with their regression suites. Much of regression testing is setting up specific data secnarios to users can perform the actual test they need. Using API for the setup can drastically reduce the oveall execution time.|
 |[comprehensive-uft-test-flightgui](https://github.com/admpresales/comprehensive-uft-test-flightgui)|UFT script demonstrating several capabilites of UFT (courtesy Ron Sercely) |
 
 ## VuGen scripts
 | Script Name      | Note                               |
 | ---------------- | ---------------------------------- |
-|[TruClient Native Mobile&nbsp; &nbsp; &nbsp; &nbsp; ](https://github.com/admpresales/AOS_TruClient_buy_headphones_with_transactions)|This is a simple TruClient mobile script for iOS. Works against the AOS app|
+|[TruClient Native Mobile&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; ](https://github.com/admpresales/AOS_TruClient_buy_headphones_with_transactions)|This is a simple TruClient mobile script for iOS. Works against the AOS app|
 
 ## Utility scripts
 | Script Name      | Note                               |
 | ---------------- | ---------------------------------- |
 |[jenkins-jobs](https://github.houston.softwaregrp.net/AMSPreSales-Demos/jenkins-jobs)|This is a set of scripts to extract or deploy Jenkins views and jobs.  It also contains the jobs and views from the released version of the devops docker image|
-|[Docker Server Scripts&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ](https://github.com/panama69/DockerScripts.git)|Scripts used to start various containers for the demos|
+|[Docker Server Scripts&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ](https://github.com/panama69/DockerScripts.git)|Scripts used to start various containers for the demos|
 
 ## Branching and Merging strategies
 [A Successful Git Branching Model](http://nvie.com/posts/a-successful-git-branching-model/)
