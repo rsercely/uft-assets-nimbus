@@ -1,12 +1,12 @@
 # Contents-and-Usage-of-Contained-Scripts
-This document listsdemo assets that the field has found useful as part of a core demo or tailored demo.
+This document lists demo assets that the field has found useful as part of a core demo or tailored demo.
 
 **Most** of these test scripts are not considered part of the "core" demo assets which means you will **not** find them delivered as part of the [devops.dockerapp](https://hub.docker.com/r/admpresales/devops.dockerapp/) or the [devops](https://hub.docker.com/r/admpresales/devops/) images.  Test scripts that are shown on this page that **are** part of the core scripts delivered in the Devops image are noted with '(c)'.  For example:
 ```
 leanft-gherkin (c)
 ```
 
-Instructions on [How to add test scripts to the devops container](#how-to-add-test-to-devops-container) can be found below. Alternatively, you could just clone or fork the repository into the file system of NimbusClient or NimbusServer.  
+Instructions on [How to add a test script to devops container](#how-to-add-a-test-script-to-devops-container) can be found below. Alternatively, you could just clone or fork the repository into the file system of NimbusClient or NimbusServer.  
 
 Instruction and expectations for those developing new test scripts can be found below:<br>
 [Expectations for those developing new scripts](#Expectations-for-those-developing-new-scripts)
@@ -54,7 +54,7 @@ Instruction and expectations for those developing new test scripts can be found 
 
 [Git Tip: Tags](http://alblue.bandlem.com/2011/04/git-tip-of-week-tags.html)
 
-## How to add test to devops container
+## How to add a test script to devops container
 If you can connect to https://www.github.com from your devops container, then from a terminal window on NimbusServer with the devops container up, run the following command:
 
 ```
@@ -82,9 +82,8 @@ All projects must have a useful README.md. Help on how to create the README.md u
 * [Markdown Cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [Basic Writing and Formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 * [Markdown Cheat sheet PDF](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-```
 
-If you are going to writing a lot with Markdown, or something "fancy", you might want to install MarkdownPad, which allows you to develop Markdown on your desktop where you see the "code" and results side by side:<br>
+If you are going to be writing a lot of Markdown, or writing something "fancy", you might want to install MarkdownPad, which allows you to develop Markdown on your desktop where you see the "code" and results side by side:<br>
 [Markdown editor for your desktop](http://markdownpad.com/news/2013/introducing-markdownpad-2)
 
 To make it work on Windows 10 however, you will also need to install awesomium sdk:<br>
@@ -109,14 +108,16 @@ Examples:
 	    uft-gui-aos-create_new_account
 	    vugen-truclient-aos-sanity
 
+Note: For LeanFt scripts, the format is:
+		<technology-IDE-type-target-short_description>
+This is important especially for scripts developed with Visual Studio.
+
 If the technology supports it, there should be at least one checkpoint.
 
 If the technology supports it, there should a parameterized value(s).
 
-All web tests should be run against all installed browsers.
-
 #####LeanFt
-Test should be verified within both NimbusClient and NimbusServer.
+Test scripts should be verified within both NimbusClient and NimbusServer, on all installed browsers
 
 Only maven projects should be used.
 
@@ -138,7 +139,7 @@ Then in each LeanFt <dependency>, replace the hard coded version with ${leanft.v
 #####UFT
 Web scripts should always be recorded with Internet Explorer so that the active screen is present.
 
-Test replay should be tested against the 3 browsers installed on NimbusClient, i.e, IE, Chrome, Firefox.
+Test script replay should be against the 3 browsers installed on NimbusClient, i.e, IE, Chrome, Firefox.
 
 
 #####VuGen
