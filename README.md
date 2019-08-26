@@ -90,13 +90,13 @@ To make it work on Windows 10 however, you will also need to install awesomium s
 [awesomium sdk](http://markdownpad.com/download/awesomium_v1.6.6_sdk_win.exe)
 
 ##### Required sections/outline
-| Field Name      | Required(Y/N|Other Comments
-| ----------------| ---------------------------------- |
-Script Name      | Y| Should be same as name of repository, except can use Camel-Case
-Description : Y | Should be same as github repository description string
-Table of Contents| N | This is a TOC for the README, in case the README is long
-Usage| Y | How to use including prerequisites and dependencies
-Send Feedback | Y |  Email(s)
+| Field Name      | Required(Y/N|Other Comments |
+| ---------------- | --------------- | ------------------- |
+|Script Name      | Y| Should be same as name of repository, except can use Camel-Case |
+|Description : Y | Should be same as github repository description string |
+|Table of Contents| N | This is a TOC for the README, in case the README is long |
+|Usage| Y | How to use including prerequisites and dependencies |
+|Send Feedback | Y |  Email(s) |
 
 
 #### Best practices
@@ -105,12 +105,12 @@ Scripts should be named: <technology-type-target-short_description>
 
 Examples:
 
-	    uft-gui-aos-create_new_account
-	    vugen-truclient-aos-sanity
+	uft-gui-aos-create_new_account
+	vugen-truclient-aos-sanity
 
 Note: For LeanFt scripts, the format is:
 
-		<technology-IDE-type-target-short_description>
+	<technology-IDE-type-target-short_description>
 
 This is important especially for scripts developed with Visual Studio.
 
