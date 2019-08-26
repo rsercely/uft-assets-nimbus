@@ -93,7 +93,7 @@ To make it work on Windows 10 however, you will also need to install awesomium s
 | Field Name      | Required(Y/N|Other Comments |
 | ---------------- | --------------- | ------------------- |
 |Script Name      | Y| Should be same as name of repository, except can use Camel-Case |
-|Description : Y | Should be same as github repository description string |
+|Description | Y | Should be same as github repository description string |
 |Table of Contents| N | This is a TOC for the README, in case the README is long |
 |Usage| Y | How to use including prerequisites and dependencies |
 |Send Feedback | Y |  Email(s) |
