@@ -76,7 +76,7 @@ docker exec devops bash -c 'chown -R apache:apache /gitrepo/aos-web-lft4se'
 **You would of course replace the url and name to the git project you wish to use in the above steps**
 
 ## Expectations for those developing new scripts
-####README.md
+#### README.md
 All projects must have a useful README.md. Help on how to create the README.md using the github markdown language can be found:<br>
 * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 * [Markdown Cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
@@ -89,7 +89,7 @@ If you are going to be writing a lot of Markdown, or writing something "fancy", 
 To make it work on Windows 10 however, you will also need to install awesomium sdk:<br>
 [awesomium sdk](http://markdownpad.com/download/awesomium_v1.6.6_sdk_win.exe)
 
-#####Required sections/outline
+##### Required sections/outline
 | Field Name      | Required(Y/N|Other Comments
 | ----------------| ---------------------------------- |
 Script Name      | Y| Should be same as name of repository, except can use Camel-Case
@@ -99,8 +99,8 @@ Usage| Y | How to use including prerequisites and dependencies
 Send Feedback | Y |  Email(s)
 
 
-####Best practices
-#####General
+#### Best practices
+##### General
 Scripts should be named: <technology-type-target-short_description>
 
 Examples:
@@ -109,14 +109,16 @@ Examples:
 	    vugen-truclient-aos-sanity
 
 Note: For LeanFt scripts, the format is:
+
 		<technology-IDE-type-target-short_description>
+
 This is important especially for scripts developed with Visual Studio.
 
 If the technology supports it, there should be at least one checkpoint.
 
 If the technology supports it, there should a parameterized value(s).
 
-#####LeanFt
+##### LeanFt
 Test scripts should be verified within both NimbusClient and NimbusServer, on all installed browsers
 
 Only maven projects should be used.
@@ -136,12 +138,12 @@ Then in each LeanFt <dependency>, replace the hard coded version with ${leanft.v
             <version>${leanft.version}</version>
     </dependency>
 
-#####UFT
+##### UFT
 Web scripts should always be recorded with Internet Explorer so that the active screen is present.
 
 Test script replay should be against the 3 browsers installed on NimbusClient, i.e, IE, Chrome, Firefox.
 
 
-#####VuGen
+##### VuGen
 
 RonK or Michal?
