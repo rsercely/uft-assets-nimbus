@@ -18,7 +18,7 @@ Instruction and expectations for those developing new test scripts can be found 
 | Script Name  | Note|
 | ---------------- | ---------------------------------- |
 |[leanft-gherkin](https://github.com/admpresales/leanft-gherkin) (c)| IntelliJ - maven project which uses LeanFT and gherkins features and files and cucumber for execution.  This one actually executes a test against AOS |
-|octane-gherkin](https://github.com/admpresales/octane-gherkin) (c)|Very similar to LeanFT_Gherkins with the exception that the Gherkin step definitions are left empty so it runs faster.  The intent here is to use when focusing on Octane demos only and LeanFt is not a focus. |
+|[octane-gherkin](https://github.com/admpresales/octane-gherkin) (c)|Very similar to LeanFT_Gherkins with the exception that the Gherkin step definitions are left empty so it runs faster.  The intent here is to use when focusing on Octane demos only and LeanFt is not a focus. |
 |[aos-web-lft4se](https://github.com/admpresales/aos-web-lft4se) | Maven project demonstrating using LeanFt for Selenium in a simple project.  This was created using the Selenium OIC. |
 |[simple-lft-selenium](https://github.com/admpresales/simple-lft-selenium)|Simple script demonstrating Selenium and LeanFt used together.  With webdriver launching and LeanFt attaching to browser and using the Verify and Reporter classes |
 |[oscillating](https://github.com/admpresales/oscillating)|This script was used as part of a training session to demonstrate how areas of the Octane Pipeline Analysis screen gets populated based on how scripts run, pass, fail, etc. |
@@ -76,11 +76,14 @@ docker exec devops bash -c 'chown -R apache:apache /gitrepo/aos-web-lft4se'
 **You would of course replace the url and name to the git project you wish to use in the above steps**
 
 ## Expectations for those developing new scripts
+
+Note: if you create a new test script that think should be added to the admpresales account, the instructions for transfering are here:<br>
+[How to transfer a github repository](https://help.github.com/en/articles/transferring-a-repository#transferring-a-repository-owned-by-your-personal-account)
 #### README.md
 All projects must have a useful README.md. Help on how to create the README.md using the github markdown language can be found:<br>
-* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+* [Mastering Markdown](https://guides.github.com/features/mastering-markdown)
 * [Markdown Cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* [Basic Writing and Formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+* [Basic Writing and Formatting](https://help.github.com/articles/basic-writing-and-formatting-syntax)
 * [Markdown Cheat sheet PDF](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 If you are going to be writing a lot of Markdown, or writing something "fancy", you might want to install MarkdownPad, which allows you to develop Markdown on your desktop where you see the "code" and results side by side:<br>
